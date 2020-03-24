@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="Name"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:id="@+id/iname"/>
+
+          </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="5dp"
+              android:text="Phone"
+              android:textSize="16dp"
+              android:textStyle="bold" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="5dp"
+              android:text="Phone"
+              android:textSize="16dp"
+              android:textStyle="bold"
+              android:id="@+id/iPhone"/>
+
+        </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="Time"
+                  android:textSize="16dp"
+                  android:textStyle="bold" />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="time"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:id="@+id/itime"/>
+
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="Truck"
+                  android:textSize="16dp"
+                  android:textStyle="bold" />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="truck"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:id="@+id/iTrack"/>
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="Catogres"
+                  android:textSize="16dp"
+                  android:textStyle="bold" />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="Catogres"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:id="@+id/iCatogres"/>
+
+          </LinearLayout>
+
+
+
+
+
+
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

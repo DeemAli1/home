@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">home</string>
+
+    <array name="Truck">
+        <item>Large</item>
+        <item>Medium</item>
+        <item>Small</item>
+    </array>
+</resources>
+

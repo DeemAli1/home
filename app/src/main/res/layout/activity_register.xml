@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".register">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_action_heart_love_nature_512"
+            android:scaleType="fitCenter"
+            android:id="@+id/fromlogo"
+            />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/fromlogo"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation = "vertical"
+                android:background="@drawable/trans_white_rectangle"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Just a few details to make your first step of saving the world.. "
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Name: "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_stat_person"
+
+                    />
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_wite"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/edName"
+                    android:layout_marginBottom="15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Phone number: "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_stat_contact_phone"
+                    />
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_wite"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/edPhone"
+                    android:layout_marginBottom="15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Track : "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_stat_directions_car"
+                    />
+                <Spinner
+                    android:id="@+id/edTrack"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_wite"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:hint="Phone number"
+                    android:entries="@array/Truck"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:drawableLeft="@drawable/ic_stat_timer"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Time: "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_wite"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/edTime"
+                    android:layout_marginBottom="15dp"
+                    android:inputType="date"
+                    android:onClick="Opentime"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Category: "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_stat_autorenew"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <CheckBox
+                    android:id="@+id/edGlass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Glass"
+                    android:theme="@style/MyCheckBox"
+
+                    />
+                <CheckBox
+                    android:id="@+id/edPaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Paper"
+                    android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/edPlastic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Plastic"
+                    android:theme="@style/MyCheckBox"
+                    />
+                <CheckBox
+                    android:id="@+id/edOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Others"
+                    android:theme="@style/MyCheckBox"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/edSave"
+
+                    android:text="Confirm"
+                    android:textStyle="normal"
+                    android:background="@drawable/confirm_button"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout >
